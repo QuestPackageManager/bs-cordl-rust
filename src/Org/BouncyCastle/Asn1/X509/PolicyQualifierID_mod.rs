@@ -1,0 +1,58 @@
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PolicyQualifierID {
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::X509::PolicyQualifierID
+    => "Org.BouncyCastle.Asn1.X509"."PolicyQualifierID"
+);
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
+    type Target = crate::Org::BouncyCastle::Asn1::DerObjectIdentifier;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+impl crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
+    pub const IdQt: &'static str = "1.3.6.1.5.5.7.2";
+    pub fn _ctor(
+        &mut self,
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (id))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        id: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (id))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+X509+PolicyQualifierID")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

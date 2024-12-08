@@ -1,0 +1,340 @@
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct X509CrlStoreSelector {
+    __cordl_parent: crate::System::Object,
+    pub certificateChecking: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    pub dateAndTime: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    pub issuers: *mut crate::System::Collections::ICollection,
+    pub maxCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub minCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    pub attrCertChecking: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    pub completeCrlEnabled: bool,
+    pub deltaCrlIndicatorEnabled: bool,
+    pub issuingDistributionPoint: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub issuingDistributionPointEnabled: bool,
+    pub maxBaseCrlNumber: *mut crate::Org::BouncyCastle::Math::BigInteger,
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::X509::Store::X509CrlStoreSelector =>
+    "Org.BouncyCastle.X509.Store"."X509CrlStoreSelector"
+);
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+impl std::ops::Deref for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+impl crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    pub fn set_MaxBaseCrlNumber(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MaxBaseCrlNumber", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MinCrlNumber(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MinCrlNumber", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DateAndTime(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DateAndTime", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CertificateChecking(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::X509Certificate = __cordl_object
+            .invoke("get_CertificateChecking", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_Issuers(
+        &mut self,
+        value: *mut crate::System::Collections::ICollection,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Issuers", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AttrCertChecking(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate = __cordl_object
+            .invoke("get_AttrCertChecking", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_CompleteCrlEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_CompleteCrlEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_X509CrlStoreSelector1(
+        &mut self,
+        o: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (o))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Clone(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Object = __cordl_object
+            .invoke("Clone", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_AttrCertChecking(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::X509::IX509AttributeCertificate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_AttrCertChecking", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Issuers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::ICollection = __cordl_object
+            .invoke("get_Issuers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxCrlNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_MaxCrlNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DateAndTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Utilities::Date::DateTimeObject = __cordl_object
+            .invoke("get_DateAndTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MinCrlNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_MinCrlNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_MaxCrlNumber(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::Math::BigInteger,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_MaxCrlNumber", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CompleteCrlEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CompleteCrlEnabled", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_DeltaCrlIndicatorEnabled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_DeltaCrlIndicatorEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IssuingDistributionPoint(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("get_IssuingDistributionPoint", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_IssuingDistributionPointEnabled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_IssuingDistributionPointEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IssuingDistributionPointEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IssuingDistributionPointEnabled", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_IssuingDistributionPoint(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_IssuingDistributionPoint", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_DeltaCrlIndicatorEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_DeltaCrlIndicatorEnabled", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Match(
+        &mut self,
+        obj: *mut crate::System::Object,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Match", (obj))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_CertificateChecking(
+        &mut self,
+        value: *mut crate::Org::BouncyCastle::X509::X509Certificate,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_CertificateChecking", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_MaxBaseCrlNumber(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Math::BigInteger> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Math::BigInteger = __cordl_object
+            .invoke("get_MaxBaseCrlNumber", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_0() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_X509CrlStoreSelector1(
+        o: *mut crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (o))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+X509+Store+X509CrlStoreSelector")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::X509::Store::X509CrlStoreSelector {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

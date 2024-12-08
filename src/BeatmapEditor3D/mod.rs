@@ -1,0 +1,3 @@
+// class BeatmapEditorStandardLevelScenesTransitionSetupDataSO_mod; export all
+mod BeatmapEditorStandardLevelScenesTransitionSetupDataSO_mod;
+pub use BeatmapEditorStandardLevelScenesTransitionSetupDataSO_mod::*;

@@ -1,0 +1,56 @@
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct NoteDataFromNoteSpawnInfoNetSerializable {
+    __cordl_parent: NoteData,
+}
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for NoteDataFromNoteSpawnInfoNetSerializable => ""
+    ."NoteDataFromNoteSpawnInfoNetSerializable"
+);
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+impl std::ops::Deref for NoteDataFromNoteSpawnInfoNetSerializable {
+    type Target = NoteData;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+impl std::ops::DerefMut for NoteDataFromNoteSpawnInfoNetSerializable {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+impl NoteDataFromNoteSpawnInfoNetSerializable {
+    pub fn _ctor(
+        &mut self,
+        noteSpawnInfo: *mut NoteSpawnInfoNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (noteSpawnInfo))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        noteSpawnInfo: *mut NoteSpawnInfoNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (noteSpawnInfo))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "NoteDataFromNoteSpawnInfoNetSerializable")]
+impl quest_hook::libil2cpp::ObjectType for NoteDataFromNoteSpawnInfoNetSerializable {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

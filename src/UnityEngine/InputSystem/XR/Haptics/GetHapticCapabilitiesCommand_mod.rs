@@ -1,0 +1,51 @@
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
+#[repr(C)]
+#[derive(Debug, Clone)]
+pub struct GetHapticCapabilitiesCommand {
+    padding: [u8; 20usize],
+}
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand =>
+    "UnityEngine.InputSystem.XR.Haptics"."GetHapticCapabilitiesCommand"
+);
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
+impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand {
+    pub const kSize: i32 = 20i32;
+    pub fn get_capabilities(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_capabilities",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_typeStatic(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::FourCC,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::FourCC = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "get_typeStatic",
+            (),
+        )?;
+        Ok(__cordl_ret)
+    }
+}

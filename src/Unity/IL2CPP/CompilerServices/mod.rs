@@ -1,0 +1,3 @@
+// class Il2CppEagerStaticClassConstructionAttribute_mod; export all
+mod Il2CppEagerStaticClassConstructionAttribute_mod;
+pub use Il2CppEagerStaticClassConstructionAttribute_mod::*;

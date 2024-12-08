@@ -1,0 +1,176 @@
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Ed448PrivateKeyParameters {
+    __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
+    pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub cachedPublicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed448PublicKeyParameters,
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Crypto::Parameters::Ed448PrivateKeyParameters =>
+    "Org.BouncyCastle.Crypto.Parameters"."Ed448PrivateKeyParameters"
+);
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+impl std::ops::Deref
+for crate::Org::BouncyCastle::Crypto::Parameters::Ed448PrivateKeyParameters {
+    type Target = crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+impl std::ops::DerefMut
+for crate::Org::BouncyCastle::Crypto::Parameters::Ed448PrivateKeyParameters {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+impl crate::Org::BouncyCastle::Crypto::Parameters::Ed448PrivateKeyParameters {
+    pub fn GetEncoded(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("GetEncoded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Encode(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Encode", (buf, off))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Sign_Ed448PublicKeyParameters_Il2CppArray_i32_Il2CppArray_i32_0(
+        &mut self,
+        algorithm: crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm,
+        publicKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed448PublicKeyParameters,
+        ctx: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        msg: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        msgOff: i32,
+        msgLen: i32,
+        sig: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        sigOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "Sign",
+                (algorithm, publicKey, ctx, msg, msgOff, msgLen, sig, sigOff),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Sign_Il2CppArray_i32_Il2CppArray_i32_1(
+        &mut self,
+        algorithm: crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed448_Algorithm,
+        ctx: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        msg: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        msgOff: i32,
+        msgLen: i32,
+        sig: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        sigOff: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Sign", (algorithm, ctx, msg, msgOff, msgLen, sig, sigOff))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SecureRandom0(
+        &mut self,
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (random))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppArray_i32_1(
+        &mut self,
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (buf, off))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Stream2(
+        &mut self,
+        input: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (input))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GeneratePublicKey(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed448PublicKeyParameters,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Crypto::Parameters::Ed448PublicKeyParameters = __cordl_object
+            .invoke("GeneratePublicKey", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_SecureRandom0(
+        random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (random))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppArray_i32_1(
+        buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        off: i32,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (buf, off))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Stream2(
+        input: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (input))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+Ed448PrivateKeyParameters")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Crypto::Parameters::Ed448PrivateKeyParameters {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

@@ -1,0 +1,311 @@
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct MultiColumnHeaderColumn {
+    __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
+    pub m_ContentContainer: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_Content: *mut crate::UnityEngine::UIElements::VisualElement,
+    pub m_SortIndicatorContainer: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnSortIndicator,
+    pub m_ScheduledHeaderTemplateUpdate: *mut crate::UnityEngine::UIElements::IVisualElementScheduledItem,
+    pub _clickable_k__BackingField: *mut crate::UnityEngine::UIElements::Clickable,
+    pub _mover_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    pub _column_k__BackingField: *mut crate::UnityEngine::UIElements::Column,
+}
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn =>
+    "UnityEngine.UIElements.Internal"."MultiColumnHeaderColumn"
+);
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
+    type Target = crate::UnityEngine::UIElements::VisualElement;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+impl crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
+    pub fn UpdateHeaderTemplate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateHeaderTemplate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _InitManipulators_b__46_0(
+        &mut self,
+        mv: *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<InitManipulators>b__46_0", (mv))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_column(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Column> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Column = __cordl_object
+            .invoke("get_column", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_content(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_content", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isContentBound(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isContentBound", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_mover(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Internal::ColumnMover = __cordl_object
+            .invoke("get_mover", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        column: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (column))?;
+        Ok(__cordl_ret)
+    }
+    pub fn DestroyHeaderContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DestroyHeaderContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_clickable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::UIElements::Clickable> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::Clickable = __cordl_object
+            .invoke("get_clickable", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_sortOrderLabel(
+        &mut self,
+        value: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_sortOrderLabel", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateDataFromColumn(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateDataFromColumn", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_mover(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Internal::ColumnMover,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_mover", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_clickable(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Clickable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_clickable", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindHeaderContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BindHeaderContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UnbindHeaderContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UnbindHeaderContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn UpdateGeometryFromColumn(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("UpdateGeometryFromColumn", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn __ctor_b__45_0(
+        &mut self,
+        c: *mut crate::UnityEngine::UIElements::Column,
+        role: crate::UnityEngine::UIElements::ColumnDataType,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<.ctor>b__45_0", (c, role))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_content(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("get_content", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_column(
+        &mut self,
+        value: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_column", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_isContentBound(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_isContentBound", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InitManipulators(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InitManipulators", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn DefaultBindHeaderContent(
+        &mut self,
+        ve: *mut crate::UnityEngine::UIElements::VisualElement,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("DefaultBindHeaderContent", (ve))?;
+        Ok(__cordl_ret)
+    }
+    pub fn __ctor_b__45_1(
+        &mut self,
+        c: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("<.ctor>b__45_1", (c))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CreateDefaultHeaderContent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::UIElements::VisualElement,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::UIElements::VisualElement = __cordl_object
+            .invoke("CreateDefaultHeaderContent", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        column: *mut crate::UnityEngine::UIElements::Column,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (column))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnHeaderColumn")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

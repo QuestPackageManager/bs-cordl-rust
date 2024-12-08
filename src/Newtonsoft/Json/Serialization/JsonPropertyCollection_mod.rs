@@ -1,0 +1,131 @@
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct JsonPropertyCollection {
+    __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
+        *mut crate::System::String,
+        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >,
+    pub _type: *mut crate::System::Type,
+    pub _list: *mut crate::System::Collections::Generic::List_1<
+        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >,
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Newtonsoft::Json::Serialization::JsonPropertyCollection =>
+    "Newtonsoft.Json.Serialization"."JsonPropertyCollection"
+);
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
+    type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
+        *mut crate::System::String,
+        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    >;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+impl std::ops::DerefMut
+for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
+    pub fn GetClosestMatchProperty(
+        &mut self,
+        propertyName: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonProperty = __cordl_object
+            .invoke("GetClosestMatchProperty", (propertyName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn TryGetProperty(
+        &mut self,
+        key: *mut crate::System::String,
+        item: quest_hook::libil2cpp::ByRefMut<
+            *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("TryGetProperty", (key, item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetProperty(
+        &mut self,
+        propertyName: *mut crate::System::String,
+        comparisonType: crate::System::StringComparison,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::JsonProperty = __cordl_object
+            .invoke("GetProperty", (propertyName, comparisonType))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_type))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetKeyForItem(
+        &mut self,
+        item: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("GetKeyForItem", (item))?;
+        Ok(__cordl_ret)
+    }
+    pub fn AddProperty(
+        &mut self,
+        property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("AddProperty", (property))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        _cordl_type: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_type))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

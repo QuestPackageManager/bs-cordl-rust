@@ -1,0 +1,107 @@
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Time {
+    __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
+    pub _cordl_time: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::Org::BouncyCastle::Asn1::Cms::Time =>
+    "Org.BouncyCastle.Asn1.Cms"."Time"
+);
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::Cms::Time {
+    type Target = crate::Org::BouncyCastle::Asn1::Asn1Encodable;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::Cms::Time {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+impl crate::Org::BouncyCastle::Asn1::Cms::Time {
+    pub fn _ctor_Asn1Object0(
+        &mut self,
+        _cordl_time: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (_cordl_time))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_DateTime1(
+        &mut self,
+        date: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (date))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ToAsn1Object(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Org::BouncyCastle::Asn1::Asn1Object = __cordl_object
+            .invoke("ToAsn1Object", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_TimeString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_TimeString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Date(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::System::DateTime = __cordl_object
+            .invoke("get_Date", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New_Asn1Object0(
+        _cordl_time: *mut crate::Org::BouncyCastle::Asn1::Asn1Object,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (_cordl_time))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_DateTime1(
+        date: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (date))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Asn1+Cms+Time")]
+impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Asn1::Cms::Time {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

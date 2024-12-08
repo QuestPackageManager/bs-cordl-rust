@@ -1,0 +1,133 @@
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct DesEdeWrapEngine {
+    __cordl_parent: crate::System::Object,
+    pub engine: *mut crate::Org::BouncyCastle::Crypto::Modes::CbcBlockCipher,
+    pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
+    pub paramPlusIV: *mut crate::Org::BouncyCastle::Crypto::Parameters::ParametersWithIV,
+    pub iv: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    pub forWrapping: bool,
+    pub sha1: *mut crate::Org::BouncyCastle::Crypto::IDigest,
+    pub digest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine =>
+    "Org.BouncyCastle.Crypto.Engines"."DesEdeWrapEngine"
+);
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+impl crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
+    pub fn CheckCmsKeyChecksum(
+        &mut self,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        checksum: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("CheckCmsKeyChecksum", (key, checksum))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Init(
+        &mut self,
+        forWrapping: bool,
+        parameters: *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Init", (forWrapping, parameters))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_AlgorithmName(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::String = __cordl_object
+            .invoke("get_AlgorithmName", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Unwrap(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Unwrap", (input, inOff, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CalculateCmsKeyChecksum(
+        &mut self,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("CalculateCmsKeyChecksum", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Wrap(
+        &mut self,
+        input: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        inOff: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<u8> = __cordl_object
+            .invoke("Wrap", (input, inOff, length))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "Org+BouncyCastle+Crypto+Engines+DesEdeWrapEngine")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Org::BouncyCastle::Crypto::Engines::DesEdeWrapEngine {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

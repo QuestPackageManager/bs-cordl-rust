@@ -1,0 +1,73 @@
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct DataViewSettingCollection {
+    __cordl_parent: crate::System::Object,
+    pub _dataViewManager: *mut crate::System::Data::DataViewManager,
+    pub _list: *mut crate::System::Collections::Hashtable,
+}
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate ::System::Data::DataViewSettingCollection =>
+    "System.Data"."DataViewSettingCollection"
+);
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+impl std::ops::Deref for crate::System::Data::DataViewSettingCollection {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+impl std::ops::DerefMut for crate::System::Data::DataViewSettingCollection {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+impl crate::System::Data::DataViewSettingCollection {
+    pub fn set_Item(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+        value: *mut crate::System::Data::DataViewSetting,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_Item", (table, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_Item(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataViewSetting> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Data::DataViewSetting = __cordl_object
+            .invoke("get_Item", (table))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Remove(
+        &mut self,
+        table: *mut crate::System::Data::DataTable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Remove", (table))?;
+        Ok(__cordl_ret)
+    }
+}
+#[cfg(feature = "System+Data+DataViewSettingCollection")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Data::DataViewSettingCollection {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

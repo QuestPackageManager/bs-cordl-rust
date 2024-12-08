@@ -1,0 +1,1240 @@
+#[cfg(feature = "IMenuRpcManager")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct IMenuRpcManager {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "IMenuRpcManager")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for IMenuRpcManager => ""."IMenuRpcManager"
+);
+#[cfg(feature = "IMenuRpcManager")]
+impl std::ops::Deref for IMenuRpcManager {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "IMenuRpcManager")]
+impl std::ops::DerefMut for IMenuRpcManager {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "IMenuRpcManager")]
+impl IMenuRpcManager {
+    pub fn SetStartGameTime(
+        &mut self,
+        newTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetStartGameTime", (newTime))?;
+        Ok(__cordl_ret)
+    }
+    pub fn InvalidateLevelEntitlementStatuses(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("InvalidateLevelEntitlementStatuses", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getRecommendedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getRecommendedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getIsReadyEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getIsReadyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setIsEntitledToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut crate::System::String,
+            *mut crate::System::String,
+            EntitlementsStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setIsEntitledToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSelectedBeatmap(
+        &mut self,
+        key: *mut BeatmapKeyNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSelectedBeatmap", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getPlayersPermissionConfigurationEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getPlayersPermissionConfigurationEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getStartedLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getStartedLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_recommendBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_recommendBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setIsStartButtonEnabledEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            CannotStartGameReason,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setIsStartButtonEnabledEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSelectedBeatmap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetSelectedBeatmap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setIsReadyEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setIsReadyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetSelectedGameplayModifiers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetSelectedGameplayModifiers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_cancelCountdownEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_cancelCountdownEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setCountdownEndTimeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, i64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setCountdownEndTimeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setIsInLobbyEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setIsInLobbyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setIsInLobbyEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setIsInLobbyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setOwnedSongPacksEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setOwnedSongPacksEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setStartGameTimeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, i64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setStartGameTimeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getOwnedSongPacksEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getOwnedSongPacksEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_levelEntitlementStatusesInvalidatedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_levelEntitlementStatusesInvalidatedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_recommendBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_recommendBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_recommendGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut GameplayModifiers,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_recommendGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getIsInLobbyEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getIsInLobbyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_cancelCountdownEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_cancelCountdownEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetSelectedGameplayModifiers(
+        &mut self,
+        gameplayModifiers: *mut GameplayModifiers,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetSelectedGameplayModifiers", (gameplayModifiers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getRecommendedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getRecommendedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setIsEntitledToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_3<
+            *mut crate::System::String,
+            *mut crate::System::String,
+            EntitlementsStatus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setIsEntitledToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getIsStartButtonEnabledEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getIsStartButtonEnabledEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getIsReadyEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getIsReadyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setStartGameTimeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, i64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setStartGameTimeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setPlayersPermissionConfigurationEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setPlayersPermissionConfigurationEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIsReady(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetIsReady", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIsReady(
+        &mut self,
+        isReady: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsReady", (isReady))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut GameplayModifiers,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIsStartButtonEnabled(
+        &mut self,
+        reason: CannotStartGameReason,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsStartButtonEnabled", (reason))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIsInLobby(
+        &mut self,
+        isBack: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsInLobby", (isBack))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetIsEntitledToLevel(
+        &mut self,
+        levelId: *mut crate::System::String,
+        entitlementStatus: EntitlementsStatus,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetIsEntitledToLevel", (levelId, entitlementStatus))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut GameplayModifiers,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetMultiplayerGameState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetMultiplayerGameState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setMultiplayerGameStateEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            MultiplayerGameState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setMultiplayerGameStateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetOwnedSongPacks(
+        &mut self,
+        songPackMask: SongPackMask,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetOwnedSongPacks", (songPackMask))?;
+        Ok(__cordl_ret)
+    }
+    pub fn CancelLevelStart(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("CancelLevelStart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getIsEntitledToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getIsEntitledToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getIsInLobbyEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getIsInLobbyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRecommendedBeatmap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetRecommendedBeatmap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_recommendGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut GameplayModifiers,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_recommendGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getRecommendedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getRecommendedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecommendBeatmap(
+        &mut self,
+        key: *mut BeatmapKeyNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecommendBeatmap", (key))?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartLevel(
+        &mut self,
+        beatmapKeySerializable: *mut BeatmapKeyNetSerializable,
+        gameplayModifiers: *mut GameplayModifiers,
+        startTime: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "StartLevel",
+                (beatmapKeySerializable, gameplayModifiers, startTime),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setCountdownEndTimeEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, i64>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setCountdownEndTimeEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetOwnedSongPacks(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetOwnedSongPacks", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_cancelledLevelStartEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_cancelledLevelStartEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPlayersMissingEntitlementsToLevel(
+        &mut self,
+        playersMissingEntitlements: *mut PlayersMissingEntitlementsNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "SetPlayersMissingEntitlementsToLevel",
+                (playersMissingEntitlements),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_clearRecommendedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_clearRecommendedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getRecommendedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getRecommendedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_clearRecommendedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_clearRecommendedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setIsStartButtonEnabledEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            CannotStartGameReason,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setIsStartButtonEnabledEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setIsReadyEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setIsReadyEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getMultiplayerGameStateEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getMultiplayerGameStateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_requestedKickPlayerEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_requestedKickPlayerEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetCountdownEndTime(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetCountdownEndTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_levelEntitlementStatusesInvalidatedEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_levelEntitlementStatusesInvalidatedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_startedLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_4<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+            *mut GameplayModifiers,
+            i64,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_startedLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_clearRecommendedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_clearRecommendedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetPlayersPermissionConfiguration(
+        &mut self,
+        permissions: *mut PlayersLobbyPermissionConfigurationNetSerializable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetPlayersPermissionConfiguration", (permissions))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearRecommendedGameplayModifiers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearRecommendedGameplayModifiers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_clearSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_clearSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIsEntitledToLevel(
+        &mut self,
+        levelId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetIsEntitledToLevel", (levelId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetStartedLevel(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetStartedLevel", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setMultiplayerGameStateEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            MultiplayerGameState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setMultiplayerGameStateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_clearSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_clearSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_requestedKickPlayerEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_requestedKickPlayerEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_clearSelectedGameplayModifiersEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_clearSelectedGameplayModifiersEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn ClearRecommendedBeatmap(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ClearRecommendedBeatmap", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetMultiplayerGameState(
+        &mut self,
+        lobbyState: MultiplayerGameState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetMultiplayerGameState", (lobbyState))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIsStartButtonEnabled(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetIsStartButtonEnabled", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RequestKickPlayer(
+        &mut self,
+        kickedPlayerId: *mut crate::System::String,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RequestKickPlayer", (kickedPlayerId))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_clearSelectedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_clearSelectedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("get_syncTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setPlayersMissingEntitlementsToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut PlayersMissingEntitlementsNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setPlayersMissingEntitlementsToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getPlayersPermissionConfigurationEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getPlayersPermissionConfigurationEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setPlayersMissingEntitlementsToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut PlayersMissingEntitlementsNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setPlayersMissingEntitlementsToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getIsStartButtonEnabledEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getIsStartButtonEnabledEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_cancelledLevelStartEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_cancelledLevelStartEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_startedLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_4<
+            *mut crate::System::String,
+            *mut BeatmapKeyNetSerializable,
+            *mut GameplayModifiers,
+            i64,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_startedLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getOwnedSongPacksEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getOwnedSongPacksEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_getMultiplayerGameStateEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_getMultiplayerGameStateEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_setPlayersPermissionConfigurationEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut PlayersLobbyPermissionConfigurationNetSerializable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_setPlayersPermissionConfigurationEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_clearRecommendedBeatmapEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_clearRecommendedBeatmapEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetPlayersPermissionConfiguration(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetPlayersPermissionConfiguration", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetRecommendedGameplayModifiers(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetRecommendedGameplayModifiers", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_setOwnedSongPacksEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<*mut crate::System::String, SongPackMask>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_setOwnedSongPacksEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getStartedLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_1<*mut crate::System::String>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getStartedLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn RecommendGameplayModifiers(
+        &mut self,
+        gameplayModifiers: *mut GameplayModifiers,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("RecommendGameplayModifiers", (gameplayModifiers))?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetIsInLobby(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("GetIsInLobby", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_getIsEntitledToLevelEvent(
+        &mut self,
+        value: *mut crate::System::Action_2<
+            *mut crate::System::String,
+            *mut crate::System::String,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_getIsEntitledToLevelEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "IMenuRpcManager")]
+impl quest_hook::libil2cpp::ObjectType for IMenuRpcManager {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

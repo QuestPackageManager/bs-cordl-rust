@@ -1,0 +1,90 @@
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct InitializeLocalInstruction {
+    __cordl_parent: crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction,
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::System::Linq::Expressions::Interpreter::InitializeLocalInstruction =>
+    "System.Linq.Expressions.Interpreter"."InitializeLocalInstruction"
+);
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+impl std::ops::Deref
+for crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
+    type Target = crate::System::Linq::Expressions::Interpreter::LocalAccessInstruction;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+impl std::ops::DerefMut
+for crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+impl crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableBox"
+    )]
+    pub type MutableBox = crate::GlobalNamespace::InitializeLocalInstruction_MutableBox;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Parameter"
+    )]
+    pub type Parameter = crate::GlobalNamespace::InitializeLocalInstruction_Parameter;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableRefBox"
+    )]
+    pub type ImmutableRefBox = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableRefBox;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+MutableValue"
+    )]
+    pub type MutableValue = crate::GlobalNamespace::InitializeLocalInstruction_MutableValue;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+Reference"
+    )]
+    pub type Reference = crate::GlobalNamespace::InitializeLocalInstruction_Reference;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ParameterBox"
+    )]
+    pub type ParameterBox = crate::GlobalNamespace::InitializeLocalInstruction_ParameterBox;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableValue"
+    )]
+    pub type ImmutableValue = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableValue;
+    #[cfg(
+        feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableBox"
+    )]
+    pub type ImmutableBox = crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox;
+    pub fn _ctor(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(index: i32) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (index))?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}

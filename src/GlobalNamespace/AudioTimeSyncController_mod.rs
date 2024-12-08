@@ -1,0 +1,414 @@
+#[cfg(feature = "AudioTimeSyncController")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct AudioTimeSyncController {
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _audioSyncLerpSpeed: f32,
+    pub _forcedSyncDeltaTime: f32,
+    pub _startSyncDeltaTime: f32,
+    pub _stopSyncDeltaTime: f32,
+    pub _audioSource: *mut crate::UnityEngine::AudioSource,
+    pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
+    pub _graphicSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
+    pub _initData: *mut crate::GlobalNamespace::AudioTimeSyncController_InitData,
+    pub forcedNoAudioSync: bool,
+    pub stateChangedEvent: *mut crate::System::Action,
+    pub _audioLatency: f32,
+    pub _fixingAudioSyncError: bool,
+    pub _audioStartTimeOffsetSinceStart: f32,
+    pub _playbackLoopIndex: i32,
+    pub _prevAudioSamplePos: i32,
+    pub _startSongTime: f32,
+    pub _songTimeOffset: f32,
+    pub _audioStarted: bool,
+    pub _timeScale: f32,
+    pub _songTime: f32,
+    pub _dspTimeOffset: f64,
+    pub _state: crate::GlobalNamespace::AudioTimeSyncController_State,
+    pub _canStartSong: bool,
+    pub _isReady: bool,
+    pub _lastFrameDeltaSongTime: f32,
+    pub _forceNoAudioSyncOrAudioSyncErrorFixing: bool,
+}
+#[cfg(feature = "AudioTimeSyncController")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for AudioTimeSyncController => ""."AudioTimeSyncController"
+);
+#[cfg(feature = "AudioTimeSyncController")]
+impl std::ops::Deref for AudioTimeSyncController {
+    type Target = crate::UnityEngine::MonoBehaviour;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "AudioTimeSyncController")]
+impl std::ops::DerefMut for AudioTimeSyncController {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "AudioTimeSyncController")]
+impl AudioTimeSyncController {
+    #[cfg(feature = "AudioTimeSyncController+InitData")]
+    pub type InitData = crate::GlobalNamespace::AudioTimeSyncController_InitData;
+    #[cfg(feature = "AudioTimeSyncController+State")]
+    pub type State = crate::GlobalNamespace::AudioTimeSyncController_State;
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Start", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn SeekTo(
+        &mut self,
+        startTimeOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SeekTo", (startTimeOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_timeSinceStart(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_timeSinceStart", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songLength(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_songLength", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnDestroy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnDestroy", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn HandleAudioConfigurationChanged(
+        &mut self,
+        deviceWasChanged: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("HandleAudioConfigurationChanged", (deviceWasChanged))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _get_waitUntilAudioIsLoaded_b__28_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("<get_waitUntilAudioIsLoaded>b__28_0", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn add_stateChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("add_stateChangedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songTimeOffset(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_songTimeOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn set_forceNoAudioSyncOrAudioSyncErrorFixing(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("set_forceNoAudioSyncOrAudioSyncErrorFixing", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songEndTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_songEndTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_forceNoAudioSyncOrAudioSyncErrorFixing(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object
+            .invoke("get_forceNoAudioSyncOrAudioSyncErrorFixing", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_songTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_songTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isReady(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isReady", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StopSong(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StopSong", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn StartSong(
+        &mut self,
+        startTimeOffset: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("StartSong", (startTimeOffset))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Pause(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Pause", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_isAudioLoaded(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("get_isAudioLoaded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Resume(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Resume", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_state(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::AudioTimeSyncController_State,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: crate::GlobalNamespace::AudioTimeSyncController_State = __cordl_object
+            .invoke("get_state", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_dspTimeOffset(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f64 = __cordl_object.invoke("get_dspTimeOffset", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_waitUntilAudioIsLoaded(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::WaitUntil> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::WaitUntil = __cordl_object
+            .invoke("get_waitUntilAudioIsLoaded", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_lastFrameDeltaSongTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_lastFrameDeltaSongTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn remove_stateChangedEvent(
+        &mut self,
+        value: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("remove_stateChangedEvent", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Update", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Awake", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn get_timeScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: f32 = __cordl_object.invoke("get_timeScale", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "AudioTimeSyncController")]
+impl quest_hook::libil2cpp::ObjectType for AudioTimeSyncController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct AudioTimeSyncController_InitData {
+    __cordl_parent: crate::System::Object,
+    pub audioClip: *mut crate::UnityEngine::AudioClip,
+    pub startSongTime: f32,
+    pub songTimeOffset: f32,
+    pub timeScale: f32,
+}
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for crate
+    ::GlobalNamespace::AudioTimeSyncController_InitData => ""
+    ."AudioTimeSyncController/InitData"
+);
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+impl std::ops::Deref for crate::GlobalNamespace::AudioTimeSyncController_InitData {
+    type Target = crate::System::Object;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController_InitData {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+impl crate::GlobalNamespace::AudioTimeSyncController_InitData {
+    pub fn _ctor(
+        &mut self,
+        audioClip: *mut crate::UnityEngine::AudioClip,
+        startSongTime: f32,
+        songTimeOffset: f32,
+        timeScale: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (audioClip, startSongTime, songTimeOffset, timeScale))?;
+        Ok(__cordl_ret)
+    }
+    pub fn New(
+        audioClip: *mut crate::UnityEngine::AudioClip,
+        startSongTime: f32,
+        songTimeOffset: f32,
+        timeScale: f32,
+    ) -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (audioClip, startSongTime, songTimeOffset, timeScale),
+            )?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "AudioTimeSyncController+InitData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::AudioTimeSyncController_InitData {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "AudioTimeSyncController+State")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum AudioTimeSyncController_State {
+    Paused = 1i32,
+    Playing = 0i32,
+    Stopped = 2i32,
+}
+#[cfg(feature = "AudioTimeSyncController+State")]
+quest_hook::libil2cpp::unsafe_impl_value_type!(
+    in quest_hook::libil2cpp for crate ::GlobalNamespace::AudioTimeSyncController_State
+    => ""."AudioTimeSyncController/State"
+);

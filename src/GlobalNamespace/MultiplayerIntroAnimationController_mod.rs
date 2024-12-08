@@ -1,0 +1,181 @@
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct MultiplayerIntroAnimationController {
+    __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _introPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
+    pub _playerTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::System::String,
+    >,
+    pub _ringTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut crate::System::String,
+    >,
+    pub _playerTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        crate::UnityEngine::PropertyName,
+    >,
+    pub _localPlayerTrackName: *mut crate::System::String,
+    pub _localPlayerRingTrackName: *mut crate::System::String,
+    pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
+    pub _firstConnectedPlayerStart: f32,
+    pub _spawnDuration: f32,
+    pub _endMarkerName: *mut crate::System::String,
+    pub _scoreRingManager: *mut MultiplayerScoreRingManager,
+    pub _multiplayerPlayersManager: *mut MultiplayerPlayersManager,
+    pub _multiplayerSessionManager: *mut IMultiplayerSessionManager,
+    pub _layoutProvider: *mut MultiplayerLayoutProvider,
+    pub _onCompleted: *mut crate::System::Action,
+    pub _introDuration: i64,
+    pub _bindingFinished: bool,
+}
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+quest_hook::libil2cpp::unsafe_impl_reference_type!(
+    in quest_hook::libil2cpp for MultiplayerIntroAnimationController => ""
+    ."MultiplayerIntroAnimationController"
+);
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+impl std::ops::Deref for MultiplayerIntroAnimationController {
+    type Target = crate::UnityEngine::MonoBehaviour;
+    fn deref(&self) -> &Self::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+impl std::ops::DerefMut for MultiplayerIntroAnimationController {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+impl MultiplayerIntroAnimationController {
+    pub fn CalculatePlayerIndexSequence(
+        &mut self,
+        allActivePlayer: *mut crate::System::Collections::Generic::IReadOnlyList_1<
+            *mut IConnectedPlayer,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::System::Collections::Generic::Queue_1<i32>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Collections::Generic::Queue_1<i32> = __cordl_object
+            .invoke("CalculatePlayerIndexSequence", (allActivePlayer))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetBeforeIntroValue(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetBeforeIntroValue", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindRingsAndSetTiming(
+        &mut self,
+        connectedPlayersCount: i32,
+        connectedRings: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::UnityEngine::GameObject,
+        >,
+        localRing: *mut crate::UnityEngine::GameObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "BindRingsAndSetTiming",
+                (connectedPlayersCount, connectedRings, localRing),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn TransitionToAfterIntroAnimationState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("TransitionToAfterIntroAnimationState", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn OnValidate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("OnValidate", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn PlayIntroAnimation(
+        &mut self,
+        maxDesiredIntroAnimationDuration: f32,
+        onCompleted: *mut crate::System::Action,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(
+                "PlayIntroAnimation",
+                (maxDesiredIntroAnimationDuration, onCompleted),
+            )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn Completed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Completed", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn GetFullIntroAnimationTime(&mut self) -> quest_hook::libil2cpp::Result<i64> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: i64 = __cordl_object.invoke("GetFullIntroAnimationTime", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn BindTimeline(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BindTimeline", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<&'static mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+}
+#[cfg(feature = "MultiplayerIntroAnimationController")]
+impl quest_hook::libil2cpp::ObjectType for MultiplayerIntroAnimationController {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
